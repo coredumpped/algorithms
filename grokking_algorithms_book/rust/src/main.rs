@@ -1,3 +1,5 @@
+mod chapter_1_binary_search;
+
 fn main() {
-    println!("Hello, world!");
+    chapter_1_binary_search::main();
 }
