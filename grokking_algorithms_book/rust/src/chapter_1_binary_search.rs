@@ -1,3 +1,5 @@
+#![warn(clippy::pedantic)]
+
 pub fn main() {
     println!("======== Binary Search! ========");
 
@@ -21,6 +23,7 @@ fn binary_search(array: Vec<i32>, target: i32) -> (i32, i32) {
         steps += 1;
         let mid = (high + low) / 2;
         if array[mid] == target {
+            // warning: casting `usize` to `i32` may truncate the value on targets with 64-bit wide pointers
             return (mid as i32, steps);
         }
 
