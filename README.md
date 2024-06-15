@@ -9,5 +9,5 @@ cargon run
 # C++
 ```bash
 # to compile and run
-g++ myProgram.cpp -o myProgram && ./myProgram
+g++ main.cpp chapter_1_binary_search.cpp -o binary_search && ./binary_search
 ```
